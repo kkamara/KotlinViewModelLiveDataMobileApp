@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +20,13 @@ class MainActivity : AppCompatActivity() {
 
         val tvCount = findViewById<TextView>(R.id.tvCount)
         val tvButton = findViewById<Button>(R.id.btnCount)
-        tvCount.text = viewModel.count.toString()
+//        tvCount.text = viewModel.count.toString()
+        viewModel.count.observe(this, Observer {
+            tvCount.text = it.toString()
+        })
         tvButton.setOnClickListener {
             viewModel.updateCount()
-            tvCount.text = viewModel.count.toString()
+//            tvCount.text = viewModel.count.toString()
         }
     }
 }
