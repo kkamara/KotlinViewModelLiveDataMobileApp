@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val tvCount = findViewById<TextView>(R.id.tvCount)
         val tvButton = findViewById<Button>(R.id.btnCount)
-        tvCount.text = 0.toString()
+        tvCount.text = count.toString()
         tvButton.setOnClickListener {
             count++
             tvCount.text = count.toString()
