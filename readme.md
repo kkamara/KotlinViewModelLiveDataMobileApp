@@ -1,4 +1,4 @@
-<img src="https://github.com/kkamara/useful/blob/main/kotlin-video-view-demo-mobile-app.png?raw=true" alt="kotlin-video-view-demo-mobile-app.png" width=""/>
+<img src="https://github.com/kkamara/useful/blob/main/KotlinViewModelLiveDataMobileApp.png?raw=true" alt="KotlinViewModelLiveDataMobileApp.png" width=""/>
 
 # Kotlin View Model Live Data Mobile App
 
